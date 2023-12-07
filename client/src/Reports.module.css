@@ -1,0 +1,156 @@
+.reportsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.menuBar {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+  
+.menuItem {
+    padding: 10px;
+    margin: 0;
+    border: none;
+    background-color: #eee; 
+    cursor: pointer;
+}
+
+.active {
+    background-color: #3498db; 
+    color: #fff; 
+}
+
+.mainContent{
+    font-family: sans-serif;
+}
+
+/* restock table */
+
+.restockContainer {
+    margin-top: 20px;
+}
+
+.sectionTitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tableContainer {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataTable th, .dataTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dataTable th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dataTable tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.noDataMessage {
+    margin-top: 10px;
+}
+
+.restockButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restockButton:hover {
+    background-color: #297fb8;
+}
+
+/* bought together table  */
+
+/* styles.module.css */
+
+.inputCont{
+    display: flex;
+    justify-content: center;
+}
+
+.soldTogetherContainer {
+    
+}
+
+.sectionTitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.dateInputContainer {
+    margin-bottom: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dateInput {
+    padding: 8px;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.drinkInputConatiner {
+
+}
+
+.selectButton {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selectButton:hover {
+    background-color: #297fb8;
+}
+
+.soldTogetherList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.soldTogetherItem {
+    margin-top: 10px;
+}
+
+.noDataMessage {
+    margin-top: 10px;
+}
+
+  
+  
+

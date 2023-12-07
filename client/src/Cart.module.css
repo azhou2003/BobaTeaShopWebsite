@@ -1,0 +1,416 @@
+.cart{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    /* color-scheme: light dark; */
+    color: rgba(0, 0, 0, 0.87);
+    /* background-color: #e7717d;
+     */
+  
+    /* background-image: url('/src/public/pattern2.jpg'); */
+    /* background-repeat: repeat;  */
+    width: 100%; 
+    height: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.cart_body{
+    background-color: #f7d9f5;
+}
+
+
+
+
+/* Header stuff */
+.header {
+    /* background-color: #9a3b3b; */
+    background-color: #f5f5f5;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px; */
+    /* padding-bottom: 20px; */
+    
+    height: 25%; /* Adjust the height as needed */
+    border-radius: 10px;
+    border: 3px solid black;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.cart_h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+  
+
+.left_buttons {
+    display: flex;
+    align-items: left;
+}
+
+.left_buttons button {
+    margin-right: 10px; /* Adjust the spacing */
+}
+
+.title_and_button {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /* width:700px;  */
+}
+  
+.title {
+    display: inline-block;
+    margin: 0;
+}
+
+.accessible{
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.links{
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.buttonList{
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.cartButton {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+    padding: 0px;
+}
+
+.cartIcon{
+    width: 60px;
+    height: 60px;
+}
+
+.titleImg{
+    height: 110px;
+    margin-left:40px;
+}
+
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #000000;
+    }
+    button {
+        background-color: #000000;
+    }
+} */
+
+.cartList {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+}
+  
+.drinkItem {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.editDropdownContent {
+    min-width: 160px;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    margin-top: 8px; 
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+ 
+.editDropdownContent button {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: none;
+}
+  
+.editDropdownContent button:hover {
+    background-color: #ddd;
+}
+
+.headerItem {
+    display: flex;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.drinkColumn {
+    width: 240px;
+    text-align: center;
+}
+  
+.priceColumn {
+    width: 80px;
+    text-align: center;
+}
+
+.priceColumnInfo {
+    width: 60px;
+    text-align: center;
+    margin-right:20px;
+}
+  
+.iceColumn {
+    width: 100px; /* Add a suitable width for the ice column */
+    text-align: center;
+}
+  
+.sweetnessColumn {
+    width: 105px; /* Add a suitable width for the sweetness column */
+    text-align: center;
+}
+  
+.addonsColumn {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+    width: 170px;
+}
+
+.editButton {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: right;
+    margin-left: 15%;
+    height: 40px;
+}
+
+.removeButton {
+    padding: 8px 12px;
+    background-color: #bd5c5c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: right;
+    margin-left: 2%;
+    height: 40px;
+}
+
+.editButton:hover {
+    background-color: #45a049;
+}
+
+.totalPrice {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 10px;
+    margin-left: 50px;
+    font-weight: bold;
+    align-items: center; /* Align total with drink info */
+}
+
+/* Additional styling for overall container */
+.cartListContainer {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.checkoutButton,
+.returnButton {
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 100px;
+    height: 52px;
+    font-size: 100%;
+    background-color: #2196f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkoutButton:hover,
+.returnButton:hover {
+    background-color: #0b7dda;
+}
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOverlay_button{
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+  
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    font-size: 40px;
+}
+
+.h3Topping{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.selectDrop {
+    height: 30px;
+    width: 100%;
+    margin: 0; 
+    padding: 5px; 
+}
+
+.toppingsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    width:60%;
+    /* background-color: pink; */
+    justify-content: center;
+    align-self: center;
+    margin-right: auto;
+    margin-left:auto; 
+    margin-bottom:15px;
+    margin-top:0px;
+}
+  
+.toppingsContainer button {
+    width: calc(25% - 10px);
+    height: 40px;
+    /* margin-bottom: 10px; */
+    border-radius: 8px;
+}
+
+.toggleButtonActive {
+    background-color: #f3c5e2; 
+    /* color: #ffffff;  */
+    border-radius: 8px;
+    /* border: 2px solid black; */
+}
+  
+.toggleButton:hover {
+    background-color: #e0e0e0;
+    color: #000000; 
+}
+  
+.closeButton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size:20px;
+    font-weight: 500;
+}
+
+.addCartBtnModal {
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Push the button to the bottom */
+    font-size:20px;
+}
+  
+.addCartBtnModal:hover {
+    background-color: lightgray;
+}
+
+.addCartBtnModal:focus,
+.addCartBtnModal:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+  
+.addCartBtnModal:active {
+    background-color: grey;
+}
+
+.accessTitles{
+    font-size: 1em;
+    font-weight: 700;
+}

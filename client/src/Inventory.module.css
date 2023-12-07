@@ -1,0 +1,167 @@
+.inventory {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+
+    background-repeat: repeat; 
+    background-image: url('/src/public/pattern2.jpg');
+    width: 100%; 
+    height: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .container {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('/src/public/pattern2.jpg');
+    /* background-repeat: repeat;  */
+    width: 100%; /* Set the width and height of the container */
+    height: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .subtitle {
+    color: #555;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table thead {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .input, .button {
+    margin: 5px;
+    padding: 8px;
+  }
+  
+  .button {
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+    border-color: #000000;
+  }
+  
+  .input_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .input_container .input {
+    margin: 5px;
+    padding: 8px;
+    flex: 1;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .navContainer{
+    display: flex;
+    background-color: #222831;
+    width: 100%;
+    border: 3px solid #EEEEEE;
+    border-radius: 10px;
+    justify-content: space-between
+}
+
+.accOptions{
+    display: flex;
+    padding: 2%;
+    gap: 30px;
+}
+
+.accOptions h4{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+.navOptions{
+    display: flex;
+    padding: 2%;
+    gap: 30px;
+}
+
+.exitButton, .translateButton{
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    color: #EEEEEE; 
+    background-color: #AF2655;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    height: auto; 
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.translateButton{
+    background-color: #EEEEEE;
+    min-width: 200px;
+}
+
+.exitButton{
+    background-color: #860A35;
+}
+
+.exitButton:hover{
+    transform: scale(1.05); 
+} 
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.visible {
+  display: block;
+}

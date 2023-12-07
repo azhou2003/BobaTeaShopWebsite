@@ -1,0 +1,464 @@
+.home {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    /* color-scheme: light dark; */
+    color: rgba(0, 0, 0, 0.87);
+    /* background-color: #e7717d;
+     */
+  
+    /* background-image: url('/src/public/pattern2.jpg'); */
+    background-repeat: no-repeat; 
+    /* width: 100%; 
+    height: 100%; */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    display: flex;
+    flex-direction: column; /* Adjust if needed */
+    justify-content: center;
+    align-items: center;
+  }
+  
+.home_a {
+    font-weight: 500;
+    color: #000000;
+    text-decoration: inherit;
+}
+
+.home_body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('/src/public/pattern2.jpg');
+    background-repeat: calc(); 
+    /* width: 100%; /* Set the width and height of the container */
+    /* height: 100%;  */
+}
+
+.home_button {
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.home_button:hover {
+    border-color: #000000;
+}
+.home_button:focus,
+.home_button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* Category */
+.addCartBtn{
+    border-radius: 8px;
+    border: 2px solid black;
+    /* padding: 0.6em 1.2em; */
+    /* padding: 20px; */
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+    height:75px;
+    width: 150px;
+    /* margin-top: 5px; */
+    cursor: pointer;
+    background-color: #f5f5f5;
+    align-items: top;
+    position: bottom;
+    /* position: relative; */
+    margin-bottom: 10px;
+}
+.addCartBtn:hover{
+    background-color:lightgray;
+}
+.addCartBtn:focus,
+.addCartBtn:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+.addCartBtn:active{
+    background-color:grey;
+}
+
+@media (max-width: 768px) {
+    .addCartBtn {
+      width: 100%; /* Make the button full width on smaller screens */
+    }
+  }
+  @media (max-height: 768px) {
+    .addCartBtn {
+      width: 100%; /* Make the button full width on smaller screens */
+    }
+  }
+/* 
+.background-container {
+    background-image: url('your-background-image.jpg');
+    background-repeat: repeat;
+    width: 100%; 
+    height: 100%;
+} */
+
+.button_separator {
+    width: 0px; /* Adjust this value to control the separation width */
+}
+
+
+.category {
+    padding: 10px;
+    align-self: center;
+}
+
+.drink_panel_container {
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.drink_panel {
+    background-color: #f5f5f5;
+    border: 1px solid #000;
+    padding: 10px;
+    /* width: calc(33.33% - 100px);  */
+    width: 350px;
+    box-sizing: border-box; 
+    text-align: center;
+    align-items: stretch; /* Make items stretch vertically */
+    flex-grow: 0.1;
+}
+
+.home_img {
+    width: 75%;
+    height: auto;
+    margin-top:auto;
+}
+
+.category_container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height to cover the viewport */
+    padding-bottom: 50px;
+}
+
+
+/* Header stuff */
+.header {
+    /* background-color: #9a3b3b; */
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; 
+    
+    height: 25%;
+    /* width: 100%; */
+    border-radius: 10px;
+    border: 3px solid black;
+    align-self: center;
+    display: flex;
+    /* flex-direction: column; 
+    justify-content: center;
+    align-items: center; */
+}
+
+.home_h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+  
+
+.left_buttons {
+    display: flex;
+}
+
+.left_buttons button {
+    margin-right: 10px; /* Adjust the spacing */
+}
+
+.title_and_button {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.titleImg{
+    height: 110px;
+}
+
+
+
+.accessible{
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+    font-size: 100%;
+}
+
+.links{
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 100%;
+}
+
+.buttonList{
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+/* Cart Button */
+
+.cartButton {
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    padding: 0px;
+}
+
+.cartIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.cartText{
+    font-size: 20px;
+}
+
+.menuButton {
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    padding: 0px;
+}
+
+.menuIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.menuText{
+    font-size: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #000000;
+    }
+    button {
+        background-color: #000000;
+    }
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    height: 80px;
+    width: 100%; /* Set your desired width */
+    margin: auto; /* Center the navbar horizontally */
+    justify-content: center; /* Center the buttons within the navbar */
+}
+  
+.navButton {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    height: 100%;
+    width: 15%;
+    font-size: 150%;
+}
+  
+.navButton:hover {
+    background-color: #777;
+}
+
+
+  /* Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOverlay_button{
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+  
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    width:500px;
+}
+
+/* .selectStyle{
+    margin-left: 10px;
+} */
+.h3Topping{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.selectDrop {
+    height: 30px;
+    width: 100%;
+    margin: 0; 
+    padding: 5px; 
+}
+
+.toppingsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    width:60%;
+    /* background-color: pink; */
+    justify-content: center;
+    align-self: center;
+    margin-right: auto;
+    margin-left:auto; 
+    margin-bottom:15px;
+    margin-top:0px;
+}
+  
+.toppingsContainer button {
+    width: calc(25% - 10px);
+    height: 40px;
+    /* margin-bottom: 10px; */
+    border-radius: 8px;
+}
+
+.toggleButtonActive {
+    background-color: #f3c5e2; 
+    /* color: #ffffff;  */
+    border-radius: 8px;
+    /* border: 2px solid black; */
+}
+  
+.toggleButton:hover {
+    background-color: #e0e0e0;
+    color: #000000; 
+}
+  
+.closeButton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.addCartBtnModal {
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #f3c5e2;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Push the button to the bottom */
+}
+  
+.addCartBtnModal:hover {
+    background-color: lightgray;
+}
+  
+.addCartBtnModal:focus,
+.addCartBtnModal:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+  
+.addCartBtnModal:active {
+    background-color: grey;
+}
+
+
+.accessTitles{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.ingredientsContainer {
+    display: flex;
+}
+  
+.ingredientsContainer > div {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+
+.ingredientItems{
+    text-align: left;
+}
+
+.customerButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

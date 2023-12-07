@@ -1,0 +1,79 @@
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.loggedInContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.empTitle{
+    font-family: sans-serif;
+}
+  
+.loginButton,
+.logoutButton,
+.enterButton,
+.exitButton {
+  cursor: pointer;
+  border: 2px solid #fff; 
+  border-radius: 5px;
+  height: 10vh;
+  width: 30vw;
+  padding: 10px;
+  margin: 5px;
+  font-family: sans-serif; 
+  transition: all 0.3s ease; 
+  font-size: 30px;
+}
+
+.exitButton {
+    background-color: #8b0000; 
+    color: #fff;
+}
+  
+.exitButton:hover {
+    background-color: #660000; 
+    transform: scale(1.1); 
+}
+
+.logoutButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.logoutButton:hover {
+  background-color: #bd2130;
+  transform: scale(1.1); 
+}
+
+.loginButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.loginButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); 
+}
+
+.enterButton {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.enterButton:hover {
+  background-color: #218838;
+  transform: scale(1.1); 
+}
+
+  
+  
