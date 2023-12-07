@@ -8,17 +8,17 @@ Sprints: Completed in 3 sprints
 ## My Features and Responsibilities
 ### Frontend (React.js with Vite and TypeScript)
 #### Responsibilities:
-Accessibility features implementation.
-Cashier view design and functionality.
-Login styling.
-Reports page for managers.
-Collaboration on various frontend components.
+- Accessibility features implementation.
+- Cashier view design and functionality.
+- Login portal styling.
+- Reports page for managers.
+- Collaboration on various frontend components.
 ### Backend (Express.js with AWS-hosted Database)
 #### Responsibilities:
-Design and implementation of API endpoints.
-Integration with the frontend for data exchange.
-Database interactions for pulling inventory and menu tables.
-Order information submission functionality.
+- Design and implementation of API endpoints.
+- Integration with the frontend for data exchange.
+- Database interactions for pulling inventory and menu tables.
+- Order information submission functionality.
 ## Try for yourself!
 Clone the Repo
 
